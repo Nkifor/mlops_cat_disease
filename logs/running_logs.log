@@ -237,3 +237,56 @@ Source-Age: 0
 [2023-07-12 00:00:48,958: INFO: main: >>>>> Stage | Data Ingestion Stage | Finished 
 
  ========================================]
+[2023-07-12 00:12:43,366: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-12 00:12:43,368: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-12 00:12:43,369: INFO: common: created directory at: artifacts]
+[2023-07-12 00:14:17,947: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-12 00:14:17,957: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-12 00:14:17,958: INFO: common: created directory at: artifacts]
+[2023-07-12 00:14:17,960: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-07-12 00:14:21,697: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-07-12 00:37:21,320: INFO: main: >>>>> Stage | Data Ingestion Stage | Started]
+[2023-07-12 00:37:21,322: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-12 00:37:21,324: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-12 00:37:21,325: INFO: common: created directory at: artifacts]
+[2023-07-12 00:37:21,326: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-07-12 00:37:22,806: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 9977811
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "21dd92eb50cb6db3ca3237badf53329bcbcc6a86901633e818971e9030c69eb5"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 81A6:21DC:C4C99D:CC44E1:64ADD9A0
+Accept-Ranges: bytes
+Date: Tue, 11 Jul 2023 22:37:22 GMT
+Via: 1.1 varnish
+X-Served-By: cache-ams21038-AMS
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1689115042.963477,VS0,VE462
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: f10ab14674bc6d750a12a3198439392aded988fa
+Expires: Tue, 11 Jul 2023 22:42:22 GMT
+Source-Age: 0
+
+]
+[2023-07-12 00:37:22,943: INFO: main: >>>>> Stage | Data Ingestion Stage | Finished 
+
+ ========================================]
+[2023-07-12 00:37:22,943: INFO: main: *******************]
+[2023-07-12 00:37:22,944: INFO: main: >>>>>> Stage | Prepare base model | Started <<<<<<]
+[2023-07-12 00:37:22,946: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-12 00:37:22,948: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-12 00:37:22,949: INFO: common: created directory at: artifacts]
+[2023-07-12 00:37:22,950: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-07-12 00:37:23,325: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-07-12 00:37:23,514: INFO: main: >>>>>> Stage Prepare base model | Finished <<<<<<
+
+x==========x]
