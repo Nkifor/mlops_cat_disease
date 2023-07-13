@@ -513,3 +513,76 @@ x==========x]
 [2023-07-13 22:48:59,548: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
 [2023-07-13 22:48:59,550: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
 [2023-07-13 22:48:59,552: INFO: common: created directory at: artifacts\training]
+[2023-07-13 23:10:10,177: INFO: main: >>>>> Stage | Data Ingestion Stage | Started]
+[2023-07-13 23:10:10,181: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-13 23:10:10,183: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-13 23:10:10,184: INFO: common: created directory at: artifacts]
+[2023-07-13 23:10:10,185: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-07-13 23:10:10,528: ERROR: main: >>>>> Stage | Data Ingestion Stage | Failed]
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    obj.main()
+  File "c:\edu\python\mlops_projects\mlops_cat_disease_detector\src\CNN_Cat_health_classifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "c:\edu\python\mlops_projects\mlops_cat_disease_detector\src\CNN_Cat_health_classifier\components\data_ingestion.py", line 19, in download_file
+    filename, headers = request.urlretrieve(
+  File "C:\Users\Admin\anaconda3\envs\mlops\lib\urllib\request.py", line 247, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "C:\Users\Admin\anaconda3\envs\mlops\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Admin\anaconda3\envs\mlops\lib\urllib\request.py", line 531, in open
+    response = meth(req, response)
+  File "C:\Users\Admin\anaconda3\envs\mlops\lib\urllib\request.py", line 640, in http_response
+    response = self.parent.error(
+  File "C:\Users\Admin\anaconda3\envs\mlops\lib\urllib\request.py", line 569, in error
+    return self._call_chain(*args)
+  File "C:\Users\Admin\anaconda3\envs\mlops\lib\urllib\request.py", line 502, in _call_chain
+    result = func(*args)
+  File "C:\Users\Admin\anaconda3\envs\mlops\lib\urllib\request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+[2023-07-13 23:12:26,481: INFO: main: >>>>> Stage | Data Ingestion Stage | Started]
+[2023-07-13 23:12:26,485: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-13 23:12:26,487: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-13 23:12:26,488: INFO: common: created directory at: artifacts]
+[2023-07-13 23:12:26,489: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-07-13 23:12:28,948: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 9981725
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "72361a350a3e5da3cdf4a0eabf16e4df71a0b45e556f36967e64c9c82e66624c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: CA08:5F27:32EDCA:3498C7:64B068BB
+Accept-Ranges: bytes
+Date: Thu, 13 Jul 2023 21:12:27 GMT
+Via: 1.1 varnish
+X-Served-By: cache-ams21038-AMS
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1689282747.144872,VS0,VE578
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 9f13e4ff642f182d6a4b3411c51dd353db9233f5
+Expires: Thu, 13 Jul 2023 21:17:27 GMT
+Source-Age: 0
+
+]
+[2023-07-13 23:12:29,087: INFO: main: >>>>> Stage | Data Ingestion Stage | Finished 
+
+ ========================================]
+[2023-07-13 23:12:29,087: INFO: main: *******************]
+[2023-07-13 23:12:29,088: INFO: main: >>>>>> Stage | Prepare base model | Started <<<<<<]
+[2023-07-13 23:12:29,091: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-13 23:12:29,093: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-13 23:12:29,093: INFO: common: created directory at: artifacts]
+[2023-07-13 23:12:29,094: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-07-13 23:12:29,473: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-07-13 23:12:29,665: INFO: main: >>>>>> Stage Prepare base model | Finished <<<<<<
+
+x==========x]
